@@ -95,7 +95,7 @@ public struct ExtractedPlace: Codable, Sendable, Hashable {
 
 /// Service for extracting entities from text content.
 /// Uses Apple's on-device NaturalLanguage framework.
-public final class EntityExtractor: Sendable {
+public final class EntityExtractor: @unchecked Sendable {
     
     public static let shared = EntityExtractor()
     
